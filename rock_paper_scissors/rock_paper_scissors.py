@@ -8,15 +8,15 @@ def play():
     
     if user == computer:
         return 'Its a tie -_-'
-    if is_win(user,computer):
+    if user_win(user,computer):
         return 'You Won :)'
 
     return 'You lost :('
 
-def is_win(player,opponent):
-    if (player == 'r' and opponent == 's') or (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+def user_win(user,computer):
+    if (user == 'r' and computer == 's') or (user == 's' and computer == 'p') or (user == 'p' and computer == 'r'):
         return True 
- #   else:
- #       print("Enter a valid choice and by entering wrong choice")
+    else:
+        print("Enter a valid choice and by entering wrong choice")
 
 print(play())         
