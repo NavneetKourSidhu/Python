@@ -5,7 +5,7 @@ def play():
     user_input = int(input("User choice: "))
     user = input("Enter your choice:\n1. Rock\n2. Paper\n3. Scissor ")
     computer = random.choice(['r','p','s'])
-    # r > s, s > p , p > r
+    ## r > s, s > p , p > r
     
     if user == computer:
         return 'Its a tie -_-'
