@@ -1,7 +1,7 @@
 import random
 import sys
 import pygame
-import pygame.locals import *
+from pygame.locals import *
 
 FPS = 32
 SCREENWIDTH = 289
@@ -38,3 +38,11 @@ if __name__ == "__main__":
     pygame.transform.rotate(pygame.image.load(PIPE).convert.alpha(), 180),
     pygame.image.load(PIPE).convert.alpha()
     )
+
+    GAME_SOUNDS['die'] = pygame.mixer.Sound('/gallery/audio/die.mp3')
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound('/gallery/audio/hit.mp3')
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('/gallery/audio/point.mp3')
+    GAME_SOUNDS['swoosh'] = pygame.mixer.Sound('/gallery/audio/swoosh.mp3')
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound('/gallery/audio/wing.mp3')
+
+    
