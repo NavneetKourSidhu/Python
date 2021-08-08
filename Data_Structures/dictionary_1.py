@@ -35,3 +35,21 @@ print(dictionary1)
 ## Add item 
 dictionary1['address'] = 'Sri Ganganagar'
 print(dictionary1)
+
+#########################################
+## Removing elements from a dictionary ##
+#########################################
+
+
+squares = {1: 1 , 2: 4, 5: 7, 8: 3}
+
+###### pop() remove a particular item
+print(squares.pop(8))
+
+####### popitem() removes last item from dictionary
+print(squares.popitem())
+
+######## clear() removes all items
+print(squares.clear())
+
+######## del  keyword deletes dictionary itself
